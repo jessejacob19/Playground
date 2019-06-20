@@ -10,7 +10,15 @@ namespace Playground
         {
 
             var customer = new Customer();
-            
+            //var calc = new ClassLibrary1.Calculate();
+            //var result = calc.PerformCal(10, 10);
+
+            ClassLibrary1.ICalculate addfunction = new ClassLibrary1.AddCalculate();
+            ClassLibrary1.ICalculate subtractfunction = new ClassLibrary1.SubtractCalculate();
+            ClassLibrary1.ICalculate multiplyfunction = new ClassLibrary1.MultiplyCalculate();
+
+            var result = multiplyfunction.PerformCal(10, 10);
+
             ClassLibrary1.MyObject myObject1 = new ClassLibrary1.MyObject();// references to another namespace
             MyObject myObject2 = new MyObject(10, 10);
             Console.WriteLine(myObject1.calculate(10, 10)); // operator overloading
