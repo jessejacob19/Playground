@@ -8,6 +8,7 @@ namespace Playground
         {
             MyObject myObject1 = new MyObject();
             MyObject myObject2 = new MyObject(10, 10);
+            Console.WriteLine(myObject1.calculate(10, 10)); // operator overloading
             /*myObject.number1 = 10;
             myObject.number2 = 5;
 
@@ -84,6 +85,12 @@ namespace Playground
         public int calculate(int number1, int number2)
         {
             return number1 + number2;
+        }
+
+        public int calculate()
+            //returns the default values
+        {
+            return _number1 + _number2;
         }
         public string MyMethod()
         {
