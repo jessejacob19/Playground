@@ -30,6 +30,12 @@ namespace Playground
             Console.WriteLine("object 1 proprety is " + myObject1.number3);
             Console.WriteLine("object 2 proprety is " + myObject2.number3);
             Console.ReadLine();
+            // access modifiers public private protected, internal
+
+            //private can be accessed within the same class
+            // internal means you can acces it in different classes within the same project
+            //but can't access internal in a different project
+            //virtual makes things overideable by using overide in a sub class
         }
     }
     
