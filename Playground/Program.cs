@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ClassLibrary1;
+using System;
+
 
 namespace Playground
 {
@@ -6,7 +8,10 @@ namespace Playground
     {
         static void Main(string[] args)
         {
-            MyObject myObject1 = new MyObject();
+
+            var customer = new Customer();
+            
+            ClassLibrary1.MyObject myObject1 = new ClassLibrary1.MyObject();// references to another namespace
             MyObject myObject2 = new MyObject(10, 10);
             Console.WriteLine(myObject1.calculate(10, 10)); // operator overloading
             /*myObject.number1 = 10;
